@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "explainers",
+  "info": {
+    "singularName": "explainer",
+    "pluralName": "explainers",
+    "displayName": "explainer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sTitle": {
+      "type": "string"
+    },
+    "bTitle": {
+      "type": "string"
+    },
+    "lText": {
+      "type": "text"
+    },
+    "rText": {
+      "type": "text"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "explainers"
+    }
+  }
+}

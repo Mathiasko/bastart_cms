@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "statements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::statement.statement",
+      "mappedBy": "page"
+    },
+    "explainers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::explainer.explainer",
+      "mappedBy": "page"
+    }
+  }
+}
