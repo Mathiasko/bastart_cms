@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "explainers",
+  "collectionName": "services",
   "info": {
-    "singularName": "explainer",
-    "pluralName": "explainers",
-    "displayName": "explainer",
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "services",
     "description": ""
   },
   "options": {
@@ -12,29 +12,32 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sTitle": {
+    "field": {
       "type": "string"
     },
-    "bTitle": {
-      "type": "string"
+    "category": {
+      "type": "string",
+      "required": true
     },
-    "lText": {
-      "type": "text"
+    "description": {
+      "type": "text",
+      "required": true
     },
-    "rText": {
-      "type": "text"
+    "subcategories": {
+      "type": "text",
+      "required": true
     },
     "page": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::page.page",
-      "inversedBy": "explainers"
+      "inversedBy": "services"
     },
     "en_page": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::en-page.en-page",
-      "inversedBy": "explainers"
+      "inversedBy": "services"
     }
   }
 }

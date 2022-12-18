@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sTitle": {
-      "type": "string"
-    },
     "text": {
       "type": "text"
     },
@@ -22,6 +19,18 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::page.page",
+      "inversedBy": "statements"
+    },
+    "link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "en_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::en-page.en-page",
       "inversedBy": "statements"
     }
   }

@@ -1,37 +1,36 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
+  "collectionName": "en_pages",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "dk-page",
+    "singularName": "en-page",
+    "pluralName": "en-pages",
+    "displayName": "en-page",
     "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "explainers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::explainer.explainer",
+      "mappedBy": "en_page"
     },
     "statements": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::statement.statement",
-      "mappedBy": "page"
-    },
-    "explainers": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::explainer.explainer",
-      "mappedBy": "page"
+      "mappedBy": "en_page"
     },
     "services": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::service.service",
-      "mappedBy": "page"
+      "mappedBy": "en_page"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }
