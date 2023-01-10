@@ -49,7 +49,7 @@ services:
       - strapi-data:/var/lib/mysql
       #- ./data:/var/lib/mysql # if you want to use a bind folder
     ports:
-      - '3306:3306'
+      - '3307:3307'
     networks:
       - strapi
 
