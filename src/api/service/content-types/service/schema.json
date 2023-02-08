@@ -17,17 +17,17 @@
     },
     "category": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "description": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "subcategories": {
       "type": "text",
       "required": true
     },
-    "page": {
+    "dk_page": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::page.page",

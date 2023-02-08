@@ -15,23 +15,23 @@
     "name": {
       "type": "string"
     },
-    "statements": {
+    "services": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::statement.statement",
-      "mappedBy": "page"
+      "target": "api::service.service",
+      "mappedBy": "dk_page"
     },
     "explainers": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::explainer.explainer",
-      "mappedBy": "page"
+      "mappedBy": "dk_page"
     },
-    "services": {
+    "statements": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::service.service",
-      "mappedBy": "page"
+      "target": "api::statement.statement",
+      "mappedBy": "dk_page"
     }
   }
 }

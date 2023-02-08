@@ -24,7 +24,7 @@
     "rText": {
       "type": "text"
     },
-    "page": {
+    "dk_page": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::page.page",
