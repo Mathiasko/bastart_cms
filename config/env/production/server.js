@@ -1,1 +1,1 @@
-module.exports = ({ env }) => ({ url: env('kalinovskyklin.xyz') })
+module.exports = ({ env }) => ({ url: env('168.119.63.200') })
